@@ -8,6 +8,7 @@
   </head>
   <body>
 
+    <div class="alert alert-success"><span th:text="${tiempoTranscurrido}"></span></div>
     <h3 th:text="${titulo}"></h3>
 
     <ul>
@@ -15,6 +16,7 @@
         <li th:text="${usuario.password}"></li>
         <li th:text="${usuario.email}"></li>
         <li th:text="${usuario.identificador}"></li>
+        <li th:text="${usuario.cuenta}"></li>
     </ul>
   </body>
 </html>
