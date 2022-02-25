@@ -7,9 +7,9 @@
     <title th:text="${titulo}">Document</title>
   </head>
   <body>
-    <div class="alert alert-success">
-      <span th:text="'Tiempo transcurrido : ' + ${tiempoTranscurrido} + ' milisegundos'"></span>
-    </div>
+
+    <section th:replace="componentes/tiempo :: interceptor"></section>
+
     <h3 th:text="${titulo}"></h3>
     <form th:action="@{/form}" th:object="${usuario}" method="post">
       <div>

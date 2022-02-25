@@ -8,6 +8,8 @@
   </head>
   <body>
 
+    <section th:replace="componentes/tiempo :: interceptor"></section>
+
     <div class="alert alert-success"><span th:text="${tiempoTranscurrido}"></span></div>
     <h3 th:text="${titulo}"></h3>
 
